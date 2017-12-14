@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/superLightOrange"
+    tools:context="com.example.coderion.planer.PlanerMainScreen">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/beach"
+        android:text="Planer"
+        android:textStyle="bold"
+        android:textSize="60sp"
+        android:gravity="center"
+        android:fontFamily="cursive"
+        android:textColor="@color/gold" />
+
+
+    <TextView
+        android:id="@+id/category_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:background="@null"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:text="Kategoria"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/woman_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            android:text="Kobieta" />
+
+        <TextView
+            android:id="@+id/man_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textSize="40dp"
+            android:text="Mezczyzna" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/woman_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/woman" />
+
+        <ImageButton
+            android:id="@+id/man_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            app:srcCompat="@drawable/man"
+             />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/copyright_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Copyright @md"
+        />
+
+
+</LinearLayout>
